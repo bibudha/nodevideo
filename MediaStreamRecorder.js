@@ -1,18 +1,3 @@
-// Muaz Khan     - www.MuazKhan.com
-// MIT License   - www.webrtc-experiment.com/licence
-// Documentation - github.com/streamproc/MediaStreamRecorder
-// ______________________
-// MediaStreamRecorder.js
-/**
- * Implementation of https://dvcs.w3.org/hg/dap/raw-file/default/media-stream-capture/MediaRecorder.html
- * The MediaRecorder accepts a mediaStream as input source passed from UA. When recorder starts,
- * a MediaEncoder will be created and accept the mediaStream as input source.
- * Encoder will get the raw data by track data changes, encode it by selected MIME Type, then store the encoded in EncodedBufferCache object.
- * The encoded data will be extracted on every timeslice passed from Start function call or by RequestData function.
- * Thread model:
- * When the recorder starts, it creates a "Media Encoder" thread to read data from MediaEncoder object and store buffer in EncodedBufferCache object.
- * Also extract the encoded data and create blobs on every timeslice passed from start function or RequestData function called by UA.
- */
 function MediaStreamRecorder(mediaStream) {
     // if user chosen only audio option; and he tried to pass MediaStream with
     // both audio and video tracks;
