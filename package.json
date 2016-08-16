@@ -1,0 +1,72 @@
+{
+  "name": "record-entire-meeting",
+  "preferGlobal": true,
+  "version": "1.0.2",
+  "author": {
+    "name": "Muaz Khan",
+    "email": "muazkh@gmail.com",
+    "url": "http://www.muazkhan.com/"
+  },
+  "description": "Record Longer Streams (Single or Multiple) using MediaStreamRecorder and Nodejs.",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streamproc/Record-Entire-Meeting.git"
+  },
+  "keywords": [
+    "mediarecorder",
+    "mediastreamrecorder",
+    "record",
+    "recorder",
+    "record-video",
+    "record-audio",
+    "record-screen",
+    "record-webrtc",
+    "recordrtc",
+    "webrtc-experiment",
+    "javascript-library",
+    "muaz",
+    "muaz-khan"
+  ],
+  "dependencies": {
+    "socket.io": "0.9.17",
+    "mkdirp": "0.5.1",
+    "fluent-ffmpeg": "2.0.1"
+  },
+  "analyze": false,
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streamproc/Record-Entire-Meeting/issues",
+    "email": "muazkh@gmail.com"
+  },
+  "homepage": "https://github.com/streamproc/Record-Entire-Meeting",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "gitHead": "0a0ebcad4400918c150cdeceba216df6cb877032",
+  "_id": "record-entire-meeting@1.0.2",
+  "_shasum": "3286dbbc5e5d12ef14e0238ce9c886544d353446",
+  "_from": "record-entire-meeting@latest",
+  "_npmVersion": "2.14.2",
+  "_nodeVersion": "0.12.7",
+  "_npmUser": {
+    "name": "muaz-khan",
+    "email": "muazkh@gmail.com"
+  },
+  "dist": {
+    "shasum": "3286dbbc5e5d12ef14e0238ce9c886544d353446",
+    "tarball": "https://registry.npmjs.org/record-entire-meeting/-/record-entire-meeting-1.0.2.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "muaz-khan",
+      "email": "muazkh@gmail.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-9-west.internal.npmjs.com",
+    "tmp": "tmp/record-entire-meeting-1.0.2.tgz_1454587749361_0.469731921562925"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/record-entire-meeting/-/record-entire-meeting-1.0.2.tgz"
+}

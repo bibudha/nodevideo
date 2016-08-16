@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Your Video</title>
+    <link rel="stylesheet" href="public/css/style.css">
+    <script src="public/js/prefixfree.min.js"></script>
+</head>
+
+<body>
+
+    <figure id="video_player">
+        <div id="video_container">
+            <video controls>
+                <source src="http://www.html5rocks.com/en/tutorials/video/basics/devstories.mp4" type="video/mp4">
+                <source src="http://www.html5rocks.com/en/tutorials/video/basics/devstories.webm" type="video/webm">
+            </video>
+        </div>
+        <figcaption>
+            <a href="http://thenewcode.com/assets/videos/glacier.mp4" class="currentvid">
+                <img src="http://thenewcode.com/assets/images/vid-glacier.jpg" alt="Athabasca Glacier">
+            </a>
+            <a href="http://thenewcode.com/assets/videos/lake.mp4">
+                <img src="http://thenewcode.com/assets/images/vid-lake.jpg" alt="Athabasca Lake">
+            </a>
+            <a href="http://thenewcode.com/assets/videos/mountain.mp4">
+                <img src="http://thenewcode.com/assets/images/vid-mountain.jpg" alt="Mountain">
+            </a>
+        </figcaption>
+    </figure>
+    <a id="downloadVideo" target="_blank" download><button type="button">Download Video</button></a>
+    <video id="webcamVideo" controls autoplay width=320 height=240></video>
+    <div id="webcamcontrols">
+        <button id="start-recording">Start Recording</button> Recording duration: <b id="time-preview">00:00</b>
+        <button id="stop-recording" disabled>Stop Recording</button>
+    </div>
+
+    <div id="ajaxloderWrap">
+        <div class="cssload-tetrominos">
+            <div class="cssload-tetromino cssload-box1"></div>
+            <div class="cssload-tetromino cssload-box2"></div>
+            <div class="cssload-tetromino cssload-box3"></div>
+            <div class="cssload-tetromino cssload-box4"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.webrtc-experiment.com/MediaStreamRecorder.js">
+    </script>
+    <script src="/Browser-Recording-Helper.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script src="public/js/index.js"></script>
+</body>
+
+</html>
