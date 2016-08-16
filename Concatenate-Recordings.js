@@ -1,6 +1,3 @@
-// Muaz Khan     - www.MuazKhan.com
-// MIT License   - www.webrtc-experiment.com/licence
-// Documentation - github.com/streamproc/MediaStreamRecorder
 var exec = require('child_process').exec;
 var fs = require('fs');
 var socket;
