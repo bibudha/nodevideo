@@ -2,10 +2,12 @@ var webcamVideo = document.getElementById("webcamVideo");
 var timePreview = document.querySelector('#time-preview');
 var progressPreview = document.querySelector('#progress-preview');
 
+
 var refToMediaStream;
 var startTime;
 
 var ajaxloderWrap = document.getElementById("ajaxloderWrap");
+var video_no_played = document.getElementById("video_no_played");
 var downloadVideo = document.getElementById("downloadVideo");
 
 var socket = io.connect('/');
@@ -129,6 +131,35 @@ var videoIsPlaying = false;
 var videoContainer = document.getElementById("video_container");
 
 (function() {
+
+ navigator.getUserMedia = navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.getUserMedia;
+    if (navigator.getUserMedia) {
+  // Request the camera.
+  navigator.getUserMedia(
+    // Constraints
+    {
+      video: true
+    },
+
+    // Success Callback
+    function(localMediaStream) {
+        video_no_played.style.display = 'none';
+    },
+
+    // Error Callback
+    function(err) {
+      // Log the error to the console.
+      video_no_played.style.display = 'block';
+      console.log('The following error occurred when trying to use getUserMedia');
+      console.log(err);
+    }
+  );
+
+} else {
+    video_no_played.style.display = 'block';
+    console.log('Sorry, your browser does not support getUserMedia');
+}
+
     function playVid(index) {
         video_links.children[index].classList.add("currentvid");
         source[1].src = vidDir + link_list[index] + ".webm";
