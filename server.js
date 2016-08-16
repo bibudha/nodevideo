@@ -1,7 +1,3 @@
-// Muaz Khan     - www.MuazKhan.com
-// MIT License   - www.webrtc-experiment.com/licence
-// Documentation - github.com/streamproc/MediaStreamRecorder
-
 var isUseHTTPs = !(!!process.env.PORT || !!process.env.IP);
 
 var server = require(isUseHTTPs ? 'https' : 'http'),
