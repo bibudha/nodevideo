@@ -1,17 +1,17 @@
 {
   "name": "record-entire-meeting",
   "preferGlobal": true,
-  "version": "1.0.2",
+  "version": "1.0.0",
   "author": {
-    "name": "Muaz Khan",
-    "email": "muazkh@gmail.com",
-    "url": "http://www.muazkhan.com/"
+    "name": "The Catalyst",
+    "email": "info@thecatalystindia.in",
+    "url": "http://www.thecatalystindia.in"/
   },
   "description": "Record Longer Streams (Single or Multiple) using MediaStreamRecorder and Nodejs.",
   "main": "server.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/streamproc/Record-Entire-Meeting.git"
+    "url": "git+https://github.com/bibudha/nodevideo"
   },
   "keywords": [
     "mediarecorder",
@@ -36,10 +36,10 @@
   "analyze": false,
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/streamproc/Record-Entire-Meeting/issues",
-    "email": "muazkh@gmail.com"
+    "url": "https://github.com/bibudha/nodevideo",
+    "email": "info@thecatalystindia.in"
   },
-  "homepage": "https://github.com/streamproc/Record-Entire-Meeting",
+  "homepage": "https://github.com/bibudha/nodevideo",
   "scripts": {
     "start": "node server.js"
   },
@@ -50,8 +50,8 @@
   "_npmVersion": "2.14.2",
   "_nodeVersion": "0.12.7",
   "_npmUser": {
-    "name": "muaz-khan",
-    "email": "muazkh@gmail.com"
+    "name": "The Catalyst",
+    "email": "info@thecatalystindia.in"
   },
   "dist": {
     "shasum": "3286dbbc5e5d12ef14e0238ce9c886544d353446",
@@ -59,8 +59,8 @@
   },
   "maintainers": [
     {
-      "name": "muaz-khan",
-      "email": "muazkh@gmail.com"
+      "name": "The Catalyst",
+      "email": "info@thecatalystindia.in"
     }
   ],
   "_npmOperationalInternal": {
